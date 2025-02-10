@@ -1548,3 +1548,47 @@ body.offcanvas {
       background-attachment: scroll;  /* Allow image to scroll with content on mobile */
   }
 }
+
+@media screen and (max-width: 768px) {
+  #colorlib-hero .flexslider .slider-text {
+      min-height: auto;
+      display: flex;
+      align-items: center; /* Centers content vertically */
+      justify-content: center; /* Centers content horizontally */
+      text-align: center;
+      padding: 5px; /* Reduces padding for better spacing */
+  }
+
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+      padding: 15px 10px; /* Adds more spacing inside the container */
+      text-align: center;
+      width: 90%; /* Ensures text fits within the screen */
+  }
+
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+      font-size: 12px !important; /* Reduced text size to fit mobile */
+      line-height: 1.2 !important; /* Adjusts spacing between lines */
+      word-wrap: break-word; /* Prevents text overflow */
+      overflow-wrap: break-word;
+      max-width: 100%; /* Ensures text does not exceed container width */
+  }
+
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner p {
+      font-size: 12px !important; /* Smaller paragraph text */
+      margin-top: 8px;
+  }
+
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
+      font-size: 12px !important;
+      padding: 6px 10px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .typing-heading {
+      font-size: 1.2rem; /* Even smaller for mobile */
+  }
+  
+  .typing-heading #typing-text {
+      font-size: 1.2rem; /* Ensure same size as main text */
+  }
+}
