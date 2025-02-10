@@ -341,6 +341,37 @@ figure {
             @media screen and (max-width: 768px) {
               #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
                 width: 100%; } }
+                @media screen and (max-width: 768px) {
+                  #colorlib-hero .flexslider .slides li {
+                      background-size: contain !important; /* Ensures full GIF is visible */
+                      background-position: center center !important; /* Centers the GIF */
+                      background-repeat: no-repeat !important;
+                      min-height: 100vh !important; /* Ensures full viewport height */
+                  }
+              
+                  #colorlib-hero .flexslider .slider-text {
+                      min-height: auto; /* Adjusts content spacing */
+                  }
+              
+                  #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+                      padding-top: 50px; /* Adjusts vertical positioning */
+                      text-align: center; /* Centers text for mobile */
+                  }
+              
+                  #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+                      font-size: 24px !important; /* Adjusts heading size */
+                  }
+              
+                  #colorlib-hero .flexslider .slider-text > .slider-text-inner p {
+                      font-size: 14px !important; /* Adjusts paragraph size */
+                  }
+              
+                  #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
+                      font-size: 14px !important;
+                      padding: 8px 12px !important;
+                  }
+              }
+              
 
 body.offcanvas {
   overflow-x: hidden; }
