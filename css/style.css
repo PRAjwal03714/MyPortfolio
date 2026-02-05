@@ -11,6 +11,12 @@
 *	Edit this section
 *
 * ======================================================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
@@ -215,10 +221,15 @@ figure {
             outline: none;
             color: #2c98f0; }
 
-.container-wrap {
+/* .container-wrap {
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto; } */
 
+.container-wrap {
+    width: 100%;
+    margin: 0;
+  }
+  
   #colorlib-main {
     width: calc(100% - 300px);
     float: right;
@@ -231,11 +242,11 @@ figure {
         padding: 0 1em; } }
   
   #colorlib-hero {
-    min-height: 500px;
+    min-height: 100vh;
     background: #fff url(../images/loader.gif) no-repeat center center;
     width: 100%;
     float: left;
-    margin-bottom: 10em;
+    margin-bottom: 0;
     clear: both; }
     #colorlib-hero .flexslider {
       border: none;
@@ -1591,4 +1602,100 @@ body.offcanvas {
   .typing-heading #typing-text {
       font-size: 1.2rem; /* Ensure same size as main text */
   }
+}
+
+.hero-title {
+  font-size: 3.6rem;          /* slightly bigger */
+  font-weight: 900 !important;
+  letter-spacing: 0.06em;
+  text-align: center;
+  line-height: 1.15;
+  margin: 0 auto;
+  width: 100%;
+  color: #0a0000;
+  margin-bottom: 80px;
+
+}
+
+.hero-title span {
+  font-size: 3.1rem;          /* slightly smaller than title */
+  font-weight: 900 !important;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-title span {
+    font-size: 2.3rem;
+  }
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider-text {
+  top: 55% !important;
+}
+#colorlib-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.resume-btn {
+  text-align: center;
+  margin: auto 0;   /* THIS is the key */
+}
+.resume-btn .btn {
+  padding: 12px 24px;
+  font-size: 0.9rem;
+}
+
+.slider-text-inner {
+  position: relative;
+  top: 12px;   /* move DOWN */
+}
+@media (max-width: 768px) {
+  .slider-text-inner {
+    top: 0;
+  }
+}
+#colorlib-hero .flexslider .slides > li {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center right !important;
+}
+#colorlib-hero {
+  min-height: 100vh;
+}
+
+
+
+#colorlib-hero {
+  min-height: 100vh;
+  margin-bottom: 0;
+}
+
+#colorlib-hero .container-fluid,
+#colorlib-hero .row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.hero-title {
+  margin-bottom: 40px;
+}
+
+#colorlib-aside .colorlib-social {
+  margin-bottom: 12px;
+}
+#colorlib-aside ul {
+  margin-bottom: -70px;
 }

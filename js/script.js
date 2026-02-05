@@ -1,11 +1,15 @@
 const textElement = document.getElementById('typing-text');
-const textOptions = ['DEVELOPER', 'ARCHITECT', 'DESIGNER', 'ENTHUSIAST']; // Text that will be typed and erased
-let currentTextIndex = 0;
+const textOptions = [
+    "DEPLOYING PRODUCTION AI PIPELINES",
+    "BUILDING DISTRIBUTED DATA SYSTEMS",
+    "ENGINEERING GRAPH & KNOWLEDGE SYSTEMS",
+  ];
+  let currentTextIndex = 0;
 let currentCharIndex = 0;
 let isErasing = false;
 
-const typingSpeed = 150;  // Speed of typing (in milliseconds)
-const erasingSpeed = 100; // Speed of erasing (in milliseconds)
+const typingSpeed = 60;  // Speed of typing (in milliseconds)
+const erasingSpeed = 30; // Speed of erasing (in milliseconds)
 const delayBetweenTextSwitch = 1000;  // Shorter delay before switching text after erasing
 
 // Function to handle typing and erasing
